@@ -2,14 +2,26 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style>
+  <script>
 
-    </style>
+  var clicks = 0;
+
+    function myFunction() {
+      clicks++;
+      document.getElementById("changeMessage").innerHTML = "You clicked the button "+clicks+" times";
+      console.log(clicks);
+    }
+
+  </script>
 </head>
 
-<body>the world is very very very very flat and sad
+<body>
+
+  <h1>JavaScript in Action!</h1>
+
+  <p id="changeMessage">Click the Button</p>
+
+  <button type="button" onclick="myFunction()">Try it</button>
 
 </body>
 
