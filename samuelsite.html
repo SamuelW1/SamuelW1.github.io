@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var clicks = 0;
+
+        function myFunction() {
+            clicks++;
+            document.getElementById("changeMessage").innerHTML = "You ate a banana " + clicks + " times";
+            console.log(clicks);
+        }
+    </script>
+</head>
+
+<body  bgcolor = "#277519" >
+
+    <h1>JavaScript in Action!</h1>
+
+    <p id="changeMessage">Click the Button</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+
+</html>
